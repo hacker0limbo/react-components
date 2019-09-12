@@ -1,0 +1,59 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.App .form-group {
+  position: relative;
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+
+.App .form-group .form-control {
+  padding: 0.5rem 1rem;
+  line-height: 2;
+  width: 50%;
+  font-size: 1rem;
+  color: #495057;
+  border: 1px solid rgba(0, 0, 0, .26);
+  border-radius: 0;
+  box-shadow: 0 0 0 0.1rem rgba(47, 60, 134, 0.1);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.App .form-group .form-control:focus {
+  transition-duration: 0.3s;
+  border-color: #98a2db;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgba(63, 81, 181, 0.25);
+}
+
+.App .form-group .suggestions {
+  list-style: none;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-top: 0;
+  margin: 0 auto;
+  width: 50%;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.App .form-group .suggestions li {
+  padding: 1rem;
+  line-height: 1.2;
+}
+
+.App .form-group .suggestions li:hover {
+  cursor: pointer;
+}
+.App .form-group .suggestions li:hover, .App .form-group .suggestions li.active {
+  background-color: rgba(168, 168, 170, 0.25);
+}
