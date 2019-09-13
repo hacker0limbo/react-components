@@ -1,0 +1,9 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.App-AutoCompleteBase {
+  margin: 150px auto 0 auto;
+  width: 300px;
+}

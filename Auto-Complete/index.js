@@ -1,14 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import suggestionsSource from './suggestionsSource'
-import AutoComplete from './AutoComplete'
-import './styles.css'
+import AutoCompleteBase from './AutoCompleteBase'
+
+import './App.css'
 
 const App = props => {
   return (
     <div className="App">
-      <div className="container">
-        <AutoComplete suggestionsSource={suggestionsSource} />
+      <div className="App-AutoCompleteBase">
+        <AutoCompleteBase 
+          suggestionsSource={suggestionsSource} 
+          suggestionsCount={5}
+        />
       </div>
     </div>
   )
