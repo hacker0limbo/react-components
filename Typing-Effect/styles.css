@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.blinking-cursor {
+  position: relative;
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+  left: 3px;
+  top: 0;
+  animation-name: blink;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
