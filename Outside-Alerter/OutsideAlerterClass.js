@@ -16,8 +16,8 @@ export default class OutsideAlerterCLass extends Component {
 
   handleClickOutside = e => {
     const selfNode = this.selfRef.current
-    if (selfNode && !selfRef.contains(e.target)) {
-      alert('You clicked outside of me')
+    if (selfNode && !selfNode.contains(e.target)) {
+      alert('Class You clicked outside of me')
     }
   }
 
