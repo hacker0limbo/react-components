@@ -45,7 +45,6 @@ export default class Draggable extends Component {
     if (!isDragging) {
       return
     }
-
     // 在拖动的过程中, 同时出发 onDrag 事件, 传递坐标让使用者可以调用
     this.setState(prevState => ({
       translateX: clientX - prevState.originalX + prevState.lastTranslateX,
